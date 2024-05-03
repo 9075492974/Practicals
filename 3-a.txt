@@ -1,0 +1,138 @@
+index.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>node JS</title>
+
+</head>
+
+body>
+
+<div data-role="page" id="home">
+
+<div data-role="header" style="background-color: rgba(186, 219, 219, 0.859);">
+
+<h3>SHIVNAGAR VIDYA PRASARAK MANDAL'S</h3>
+
+<h3>COLLEGE OF ENGINEERING, MALEGAON (BK)-BARAMATI</h3>
+
+<h4>(EN 307/6275) APPROVED BY AICTE NEW DELHI, GOVT. OF MAHARASHTRA, MUMBAI,
+
+ACCREDITED BY NAAC, BANGALORE
+
+AFFILIATED TO THE SAVITRIBAI PHULE PUNE UNIVERSITY, ID. NO.
+
+PU/PN/ENGG/084/1990</h4>
+
+</div>
+
+<div data-role="navbar" data-grid="c">
+
+<ul>
+
+<li><a href="#home">home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#dpt">Department</a></li>
+
+<li><a href="#contact">contact</a></li>
+</ul>
+
+</div>
+
+<div data-role="content">
+
+<h1>Wlcome</h1>
+
+<h2>Vision:</h2>
+
+<h4>To be nationally recognized as a centre of excellence in the field of
+
+technical
+
+education.</h4>
+
+<h2>Mission:</h2>
+
+<h4>To provide transformative education through integration of academic excellence,
+
+research, skills and values by strengthening relationship amongst the stakeholders.</h4>
+
+</div>
+
+<div data-role="footer">
+
+<h3>Quick Access</h3>
+
+<center>
+
+<a href="#home">Home</a><br>
+
+<a href="#about">About</a><br>
+
+<a href="#dept">Department</a><br>
+
+<a href="#contact">contact</a>
+
+</div>
+
+</center>
+
+</div>
+
+</body>
+
+</html>
+
+index.js
+
+const express=require('express');
+
+const app=express();
+
+app.use(express.static('public'))
+
+app.listen(4000,()=>{
+
+console.log("server is started")
+
+})
+
+package.json
+
+{
+
+    "name": "exp2c",
+    
+    "version": "1.0.0",
+    
+    "description": "this is wad practical 6",
+    
+    "main": "index.js",
+    
+    "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+    },
+    
+    "author": "",
+    
+    "license": "ISC",
+    
+    "dependencies": {
+    
+    "express":"^4.19.2"
+    
+    }
+}
+    
